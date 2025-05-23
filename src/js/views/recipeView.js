@@ -52,16 +52,11 @@ class RecipeView extends View {
           'span'
         ).textContent = `(${basketLength}) Add cart`;
       }
-     
+
       // Optionally, you can call the handler with the recipeId
       handler(recipeId, basket);
-    
     });
   }
-
- 
-
-
 
   addHndelerBookmark = function (handler) {
     this._parentElement.addEventListener('click', function (e) {
@@ -188,8 +183,6 @@ class RecipeView extends View {
                   </div>
                 </li>`;
   }
-
-  
 }
 
 export default new RecipeView();
